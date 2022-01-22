@@ -3,9 +3,9 @@ import app_controller
 window = app_controller.windows_controller()
 
 
-
-window.cmd_color("e")
 window.clear_cmd()
+window.cmd_color("e")
+
 
 going = True
 while going:
