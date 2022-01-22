@@ -11,7 +11,7 @@ Missing some shortcuts?
   
   
 Status:
-- Devloping
+- Developing
 
 Librarires used - pyautogui, os, time
 
