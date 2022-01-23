@@ -97,6 +97,6 @@ class device:
     def open_cmd(self):
         os.system('start')
         os.system('cd %USERPROFILE%')
-    def trace(self,website_name):
-        os.system(f'tracert {website_name}')
+    def trace(self,website):
+        os.system(f'tracert {website}')
     
