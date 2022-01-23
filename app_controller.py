@@ -84,4 +84,6 @@ class windows_controller:
         os.system('magnify')
     def open_wordpad(self):
         os.system('write')
+
+        
 # ! Currently this is not supported for Linux, Unix and Mac computers..
