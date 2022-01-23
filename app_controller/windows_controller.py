@@ -96,7 +96,6 @@ class device:
         os.system('git status')
     def open_cmd(self):
         os.system('start')
-        os.system('cd %USERPROFILE%')
     def trace(self,url):
         os.system(f'tracert {url}')
     
