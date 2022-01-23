@@ -90,9 +90,13 @@ class device:
         os.system(f'git commit -m "{message}"')
     def git_pull(self):
         os.system('git pull')
-    def git_push(self, branch):
+    def git_push(self, branch): # Name of branch is required
         os.system(f'git push origin {branch}')
     def git_status(self):
         os.system('git status')
-
+    def open_cmd(self):
+        os.system('start')
+        os.system('cd %USERPROFILE%')
+    def trace(self,website_name):
+        os.system(f'tracert {website_name}')
     
