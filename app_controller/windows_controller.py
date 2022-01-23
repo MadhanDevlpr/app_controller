@@ -94,4 +94,5 @@ class device:
         os.system(f'git push origin {branch}')
     def git_status(self):
         os.system('git status')
+        
     
