@@ -6,7 +6,7 @@ import os # * for running commands
 # * object for Windows 10 & 11
 # ! This may not work on Windows 7 or below.
 
-class windows_controller: 
+class device: 
     def __init__(self):
         pass
     def cmd_color(self,value):  #  can be used to change the color of a console based program
@@ -20,8 +20,6 @@ class windows_controller:
         pg.hotkey('win','i')
     def open_cpanel(self): #  Opens with RUN
         os.system('control')
-    def open_cmd(self): #  Opens with RUN
-        os.system('cmd')
     def minimize_all(self): #  WIN + M
         pg.hotkey('win','m')
     def open_start(self): #  WIN
@@ -30,7 +28,7 @@ class windows_controller:
         pg.hotkey('win','a')
     def open_file_explorer(self): #  WIN + E
         pg.hotkey('win','e')
-    def create_desktop(self): #  WIN + CTRL + D
+    def createNew_desktop(self): #  WIN + CTRL + D
         pg.hotkey('win','ctrl','d')
     def shutdown(self): #  ALT + F4 & ENTER
         os.system('shutdown /s')
@@ -84,6 +82,3 @@ class windows_controller:
         os.system('magnify')
     def open_wordpad(self):
         os.system('write')
-
-        
-# ! Currently this is not supported for Linux, Unix and Mac computers..
