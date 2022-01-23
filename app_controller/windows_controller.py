@@ -82,3 +82,5 @@ class device:
         os.system('magnify')
     def open_wordpad(self):
         os.system('write')
+    def run_command(self,command_value):
+        os.system(command_value)
