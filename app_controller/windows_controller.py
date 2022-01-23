@@ -87,12 +87,12 @@ class device:
     def git_add(self,files):
         os.system(f'git add {files}')
     def git_commit(self,message):
-        os.system(f'git commit -m {message}')
+        os.system(f'git commit -m "{message}"')
     def git_pull(self):
         os.system('git pull')
     def git_push(self, branch):
         os.system(f'git push origin {branch}')
     def git_status(self):
         os.system('git status')
-        
+
     
