@@ -19,17 +19,9 @@ class windows_controller:
     def open_settings(self): #  WIN + I
         pg.hotkey('win','i')
     def open_cpanel(self): #  Opens with RUN
-        pg.hotkey('win','r')
-        time.sleep(2)
-        pg.write('control')
-        time.sleep(2)
-        pg.press('enter')
+        os.system('control')
     def open_cmd(self): #  Opens with RUN
-        pg.hotkey('win','r')
-        time.sleep(2)
-        pg.write('cmd')
-        time.sleep(2)
-        pg.press('enter')
+        os.system('cmd')
     def minimize_all(self): #  WIN + M
         pg.hotkey('win','m')
     def open_start(self): #  WIN
@@ -56,15 +48,40 @@ class windows_controller:
         pg.hotkey('win','r')
     def new_tab(self): #  CTRL + T
         pg.hotkey('ctrl','t')
-    def print(self): #  ctrl  + p
+    def print_page(self): #  ctrl  + p
         pg.hotkey('ctrl','p')
     def save(self): # ctrl + s
         pg.hotkey('ctrl','s')
     def save_as(self): # ctrl + shift + s
         pg.hotkey('ctrl','shift','s')
-    def alert(self,value_str,title):
-        pg.alert(text=value_str,title=title)
-
-
-
+    def open_calculator(self):
+        os.system('calc')
+    def open_iexpress(self):
+        os.system('iexpress')
+    def open_hardware_wiz(self):
+        os.system('hdwwiz')
+    def open_admintools(self):
+        os.system('control admintools')
+    def bluetooth_transfer(self):
+        os.system('fsquirt')
+    def open_characterMap(self):
+        os.system('charmap')
+    def keyboard_properties(self):
+        os.system('control keyboard')
+    def mouse_properties(self):
+        os.system('control mouse')
+    def net_connections(self):
+        os.system('control netconnections')
+    def open_notepad(self):
+        os.system('notepad')
+    def open_keyboard(self):
+        os.system('osk')
+    def remote_dekstop(self):
+        os.system('mstsc')
+    def open_features(self):
+        os.system('optionalfeatures')
+    def open_magnifier(self):
+        os.system('magnify')
+    def open_wordpad(self):
+        os.system('write')
 # ! Currently this is not supported for Linux, Unix and Mac computers..
