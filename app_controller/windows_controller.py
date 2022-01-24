@@ -98,4 +98,5 @@ class device:
         os.system('start')
     def trace(self,web_url):
         os.system(f'tracert {web_url}')
-    
+    def ping(self,url):
+        os.system(f'ping {url}')
