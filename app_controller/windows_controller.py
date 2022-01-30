@@ -6,7 +6,7 @@ import os # * for running commands
 # * object for Windows 10 & 11
 # ! This may not work on Windows 7 or below.
 
-class device: 
+class device:
     def __init__(self):
         pass
     def cmd_color(self,value):  #  can be used to change the color of a console based program
