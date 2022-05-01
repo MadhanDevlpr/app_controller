@@ -1,5 +1,4 @@
 import pyautogui as pg # * for hotkeys
-import time # * for some interval between actions
 import os # * for running commands
 
 
