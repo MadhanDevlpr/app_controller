@@ -15,6 +15,10 @@ class device:
         pg.hotkey('win','ctrl','d')
     def fullscreen(self): #  F11 / fn + f11
         pg.press('f11')
+    def minimize_all(self):
+        pg.hotkey('win','d')
+    def lock_screen(self):
+        pg.hotkey('win','l')
     def new_tab(self): #  CTRL + T
         pg.hotkey('ctrl','t')
     def print_page(self): #  ctrl  + p
